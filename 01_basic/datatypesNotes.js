@@ -50,8 +50,42 @@ let person = {
 // console.log(person['age']);   // Output: 30
 // console.log(person.city); 
 
-console.log([person]);
+//console.log([person]);
 
+
+
+// **stack memory (primitive type use this memory) 
+//   like numbers boolean datatpes
+  // when use of stack memory we gave copy of decleard varible
+
+
+// **heap memory
+// when use of heap memory we gave copy of refrence varible
+
+let myyoutubeName = "om BHarati"
+
+let anotherName = myyoutubeName
+anotherName = "chaiorjs"
+
+
+ console.log(myyoutubeName);//not changes the original vlaue  output is "om BHarati"
+ console.log(anotherName); // chnages the another name value which assign you latter output is "chaiorjs"
+
+
+let useOne ={
+    emial : "user@google.com",
+    upi : "om@ybl"
+}
+
+let userTwo = useOne 
+
+
+userTwo.emial = "om@google.com"
+
+console.log(useOne.emial);
+console.log(userTwo.emial);
+
+// in this heap meomory original value is changes pitput is  "om@google.com"
 
 
 
